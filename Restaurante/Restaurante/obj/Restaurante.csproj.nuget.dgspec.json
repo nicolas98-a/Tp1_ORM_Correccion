@@ -1,0 +1,267 @@
+{
+  "format": 1,
+  "restore": {
+    "G:\\Visual Studio\\Tp1-ORM-Acuña_Nicolas-correccion\\Tp1_ORM_Correccion\\Restaurante\\Restaurante\\Restaurante.csproj": {}
+  },
+  "projects": {
+    "G:\\Visual Studio\\Tp1-ORM-Acuña_Nicolas-correccion\\Tp1_ORM_Correccion\\Restaurante\\Restaurante.AccessData\\Restaurante.AccessData.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\Visual Studio\\Tp1-ORM-Acuña_Nicolas-correccion\\Tp1_ORM_Correccion\\Restaurante\\Restaurante.AccessData\\Restaurante.AccessData.csproj",
+        "projectName": "Restaurante.AccessData",
+        "projectPath": "G:\\Visual Studio\\Tp1-ORM-Acuña_Nicolas-correccion\\Tp1_ORM_Correccion\\Restaurante\\Restaurante.AccessData\\Restaurante.AccessData.csproj",
+        "packagesPath": "C:\\Users\\Nico\\.nuget\\packages\\",
+        "outputPath": "G:\\Visual Studio\\Tp1-ORM-Acuña_Nicolas-correccion\\Tp1_ORM_Correccion\\Restaurante\\Restaurante.AccessData\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Nico\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "G:\\Visual Studio\\Tp1-ORM-Acuña_Nicolas-correccion\\Tp1_ORM_Correccion\\Restaurante\\Restaurante.Domain\\Restaurante.Domain.csproj": {
+                "projectPath": "G:\\Visual Studio\\Tp1-ORM-Acuña_Nicolas-correccion\\Tp1_ORM_Correccion\\Restaurante\\Restaurante.Domain\\Restaurante.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "G:\\Visual Studio\\Tp1-ORM-Acuña_Nicolas-correccion\\Tp1_ORM_Correccion\\Restaurante\\Restaurante.Application\\Restaurante.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\Visual Studio\\Tp1-ORM-Acuña_Nicolas-correccion\\Tp1_ORM_Correccion\\Restaurante\\Restaurante.Application\\Restaurante.Application.csproj",
+        "projectName": "Restaurante.Application",
+        "projectPath": "G:\\Visual Studio\\Tp1-ORM-Acuña_Nicolas-correccion\\Tp1_ORM_Correccion\\Restaurante\\Restaurante.Application\\Restaurante.Application.csproj",
+        "packagesPath": "C:\\Users\\Nico\\.nuget\\packages\\",
+        "outputPath": "G:\\Visual Studio\\Tp1-ORM-Acuña_Nicolas-correccion\\Tp1_ORM_Correccion\\Restaurante\\Restaurante.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Nico\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "G:\\Visual Studio\\Tp1-ORM-Acuña_Nicolas-correccion\\Tp1_ORM_Correccion\\Restaurante\\Restaurante.Domain\\Restaurante.Domain.csproj": {
+                "projectPath": "G:\\Visual Studio\\Tp1-ORM-Acuña_Nicolas-correccion\\Tp1_ORM_Correccion\\Restaurante\\Restaurante.Domain\\Restaurante.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "G:\\Visual Studio\\Tp1-ORM-Acuña_Nicolas-correccion\\Tp1_ORM_Correccion\\Restaurante\\Restaurante.Domain\\Restaurante.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\Visual Studio\\Tp1-ORM-Acuña_Nicolas-correccion\\Tp1_ORM_Correccion\\Restaurante\\Restaurante.Domain\\Restaurante.Domain.csproj",
+        "projectName": "Restaurante.Domain",
+        "projectPath": "G:\\Visual Studio\\Tp1-ORM-Acuña_Nicolas-correccion\\Tp1_ORM_Correccion\\Restaurante\\Restaurante.Domain\\Restaurante.Domain.csproj",
+        "packagesPath": "C:\\Users\\Nico\\.nuget\\packages\\",
+        "outputPath": "G:\\Visual Studio\\Tp1-ORM-Acuña_Nicolas-correccion\\Tp1_ORM_Correccion\\Restaurante\\Restaurante.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Nico\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "G:\\Visual Studio\\Tp1-ORM-Acuña_Nicolas-correccion\\Tp1_ORM_Correccion\\Restaurante\\Restaurante\\Restaurante.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\Visual Studio\\Tp1-ORM-Acuña_Nicolas-correccion\\Tp1_ORM_Correccion\\Restaurante\\Restaurante\\Restaurante.csproj",
+        "projectName": "Restaurante",
+        "projectPath": "G:\\Visual Studio\\Tp1-ORM-Acuña_Nicolas-correccion\\Tp1_ORM_Correccion\\Restaurante\\Restaurante\\Restaurante.csproj",
+        "packagesPath": "C:\\Users\\Nico\\.nuget\\packages\\",
+        "outputPath": "G:\\Visual Studio\\Tp1-ORM-Acuña_Nicolas-correccion\\Tp1_ORM_Correccion\\Restaurante\\Restaurante\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Nico\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "G:\\Visual Studio\\Tp1-ORM-Acuña_Nicolas-correccion\\Tp1_ORM_Correccion\\Restaurante\\Restaurante.AccessData\\Restaurante.AccessData.csproj": {
+                "projectPath": "G:\\Visual Studio\\Tp1-ORM-Acuña_Nicolas-correccion\\Tp1_ORM_Correccion\\Restaurante\\Restaurante.AccessData\\Restaurante.AccessData.csproj"
+              },
+              "G:\\Visual Studio\\Tp1-ORM-Acuña_Nicolas-correccion\\Tp1_ORM_Correccion\\Restaurante\\Restaurante.Application\\Restaurante.Application.csproj": {
+                "projectPath": "G:\\Visual Studio\\Tp1-ORM-Acuña_Nicolas-correccion\\Tp1_ORM_Correccion\\Restaurante\\Restaurante.Application\\Restaurante.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

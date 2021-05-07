@@ -1,0 +1,15 @@
+G:\Visual Studio\Tp1-ORM-Acuña_Nicolas-correccion\Tp1_ORM_Correccion\Restaurante\Restaurante.Application\bin\Debug\net5.0\Restaurante.Application.deps.json
+G:\Visual Studio\Tp1-ORM-Acuña_Nicolas-correccion\Tp1_ORM_Correccion\Restaurante\Restaurante.Application\bin\Debug\net5.0\Restaurante.Application.dll
+G:\Visual Studio\Tp1-ORM-Acuña_Nicolas-correccion\Tp1_ORM_Correccion\Restaurante\Restaurante.Application\bin\Debug\net5.0\ref\Restaurante.Application.dll
+G:\Visual Studio\Tp1-ORM-Acuña_Nicolas-correccion\Tp1_ORM_Correccion\Restaurante\Restaurante.Application\bin\Debug\net5.0\Restaurante.Application.pdb
+G:\Visual Studio\Tp1-ORM-Acuña_Nicolas-correccion\Tp1_ORM_Correccion\Restaurante\Restaurante.Application\bin\Debug\net5.0\Restaurante.Domain.dll
+G:\Visual Studio\Tp1-ORM-Acuña_Nicolas-correccion\Tp1_ORM_Correccion\Restaurante\Restaurante.Application\bin\Debug\net5.0\Restaurante.Domain.pdb
+G:\Visual Studio\Tp1-ORM-Acuña_Nicolas-correccion\Tp1_ORM_Correccion\Restaurante\Restaurante.Application\obj\Debug\net5.0\Restaurante.Application.csprojAssemblyReference.cache
+G:\Visual Studio\Tp1-ORM-Acuña_Nicolas-correccion\Tp1_ORM_Correccion\Restaurante\Restaurante.Application\obj\Debug\net5.0\Restaurante.Application.GeneratedMSBuildEditorConfig.editorconfig
+G:\Visual Studio\Tp1-ORM-Acuña_Nicolas-correccion\Tp1_ORM_Correccion\Restaurante\Restaurante.Application\obj\Debug\net5.0\Restaurante.Application.AssemblyInfoInputs.cache
+G:\Visual Studio\Tp1-ORM-Acuña_Nicolas-correccion\Tp1_ORM_Correccion\Restaurante\Restaurante.Application\obj\Debug\net5.0\Restaurante.Application.AssemblyInfo.cs
+G:\Visual Studio\Tp1-ORM-Acuña_Nicolas-correccion\Tp1_ORM_Correccion\Restaurante\Restaurante.Application\obj\Debug\net5.0\Restaurante.Application.csproj.CoreCompileInputs.cache
+G:\Visual Studio\Tp1-ORM-Acuña_Nicolas-correccion\Tp1_ORM_Correccion\Restaurante\Restaurante.Application\obj\Debug\net5.0\Restaurante.Application.csproj.CopyComplete
+G:\Visual Studio\Tp1-ORM-Acuña_Nicolas-correccion\Tp1_ORM_Correccion\Restaurante\Restaurante.Application\obj\Debug\net5.0\Restaurante.Application.dll
+G:\Visual Studio\Tp1-ORM-Acuña_Nicolas-correccion\Tp1_ORM_Correccion\Restaurante\Restaurante.Application\obj\Debug\net5.0\ref\Restaurante.Application.dll
+G:\Visual Studio\Tp1-ORM-Acuña_Nicolas-correccion\Tp1_ORM_Correccion\Restaurante\Restaurante.Application\obj\Debug\net5.0\Restaurante.Application.pdb
