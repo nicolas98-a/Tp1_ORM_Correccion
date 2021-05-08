@@ -8,23 +8,23 @@ using System.Threading.Tasks;
 
 namespace Restaurante.AccessData.Queries
 {
-    public class QueryTipoMercaderia : IQueryTipoMercaderia
+    public class QueryFormaEntrega : IQueryFormaEntrega
     {
-        public List<TipoMercaderia> ListarTipo()
+        public List<FormaEntrega> ListarFormaEntrega()
         {
             using (RestauranteContext _context = new RestauranteContext())
             {
-                var listaTipo = _context.TipoMercaderias.ToList();
-                return listaTipo;
+                var listaFormaEntrega = _context.FormaEntregas.ToList();
+                return listaFormaEntrega;
             }
         }
 
-        public string ObtenerTipoMercaderia (int tipoId)
+        public string ObtenerFormaEntrega (int idEntrega)
         {
             using (RestauranteContext _context = new RestauranteContext())
             {
-                string tipo = _context.TipoMercaderias.Find(tipoId).Descripcion;
-                return tipo;
+                string forma = _context.FormaEntregas.Find(idEntrega).Descripcion;
+                return forma;
             }
         }
     }

@@ -33,7 +33,7 @@ namespace Restaurante
                             break;
                         case 2:
                             Titulo();
-                          //  Abm_Comanda.getInstance().RegistrarComanda();
+                            Abm_Comanda.getInstance().RegistrarComanda();
                             Console.WriteLine("Precione una tecla para volver al menu.....");
                             Console.ReadKey(true);
                             Console.Clear();
@@ -42,7 +42,7 @@ namespace Restaurante
                             break;
                         case 3:
                             Titulo();
-                          //  Abm_Mercaderia.getInstance().ImprimirMercaderia();
+                            Abm_Mercaderia.getInstance().ImprimirMercaderia();
                             Console.WriteLine("Precione una tecla para volver al menu.....");
                             Console.ReadKey(true);
                             Console.Clear();
@@ -51,7 +51,7 @@ namespace Restaurante
                             break;
                         case 4:
                             Titulo();
-                          //  Abm_Comanda.getInstance().ImprimirComanda();
+                            Abm_Comanda.getInstance().ImprimirComanda();
                             Console.WriteLine("Precione una tecla para volver al menu.....");
                             Console.ReadKey(true);
                             Console.Clear();

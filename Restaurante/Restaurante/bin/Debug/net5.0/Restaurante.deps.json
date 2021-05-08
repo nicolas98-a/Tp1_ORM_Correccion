@@ -1075,6 +1075,7 @@
       },
       "Restaurante.Application/1.0.0": {
         "dependencies": {
+          "Restaurante.AccessData": "1.0.0",
           "Restaurante.Domain": "1.0.0"
         },
         "runtime": {

@@ -1527,6 +1527,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "Restaurante.AccessData": "1.0.0",
           "Restaurante.Domain": "1.0.0"
         },
         "compile": {

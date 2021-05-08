@@ -5,10 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Services\" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <ProjectReference Include="..\Restaurante.AccessData\Restaurante.AccessData.csproj" />
     <ProjectReference Include="..\Restaurante.Domain\Restaurante.Domain.csproj" />
   </ItemGroup>
 

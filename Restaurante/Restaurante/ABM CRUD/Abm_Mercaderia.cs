@@ -15,6 +15,7 @@ namespace Restaurante.ABM_CRUD
     {
         GenericsRepository _repository;
         QueryTipoMercaderia _queryTipoMercaderia;
+        QueryMercaderia _queryMercaderia;
 
         static Abm_Mercaderia unicoabmMercaderia = null;
 
@@ -23,6 +24,7 @@ namespace Restaurante.ABM_CRUD
         {
             _repository = new GenericsRepository();
             _queryTipoMercaderia = new QueryTipoMercaderia();
+            _queryMercaderia = new QueryMercaderia();
 
         }
 
@@ -90,6 +92,23 @@ namespace Restaurante.ABM_CRUD
 
         }
 
+        public void ImprimirMercaderia()
+        {
+            var lista = _queryMercaderia.ListarMercaderia();
+            foreach (var item in lista)
+            {
+                string tipo = _queryTipoMercaderia.ObtenerTipoMercaderia(item.TipoMercaderiaId);
+                Console.WriteLine
+                    (
+                       "            Tipo de mercaderia: " + tipo + "\n" +
+                       "Mercaderia : " + item.Nombre + "\n" +
+                       "Precio: " + item.Precio.ToString() + "\n" +
+                       "Ingredientes: " + item.Ingredientes + "\n" +
+                       "Preparacion: " + item.Preparacion + "\n" +
+                       "Imagen: " + item.Imagen + "\n"
+                    );
+            }
+        }
         public int SeleccionarTipoMercaderia()
         {
             Console.WriteLine("Seleccione el tipo de mercaderia: ");

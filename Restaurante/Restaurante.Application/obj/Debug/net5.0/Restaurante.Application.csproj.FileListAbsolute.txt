@@ -13,3 +13,5 @@ G:\Visual Studio\Tp1-ORM-Acuña_Nicolas-correccion\Tp1_ORM_Correccion\Restaurant
 G:\Visual Studio\Tp1-ORM-Acuña_Nicolas-correccion\Tp1_ORM_Correccion\Restaurante\Restaurante.Application\obj\Debug\net5.0\Restaurante.Application.dll
 G:\Visual Studio\Tp1-ORM-Acuña_Nicolas-correccion\Tp1_ORM_Correccion\Restaurante\Restaurante.Application\obj\Debug\net5.0\ref\Restaurante.Application.dll
 G:\Visual Studio\Tp1-ORM-Acuña_Nicolas-correccion\Tp1_ORM_Correccion\Restaurante\Restaurante.Application\obj\Debug\net5.0\Restaurante.Application.pdb
+G:\Visual Studio\Tp1-ORM-Acuña_Nicolas-correccion\Tp1_ORM_Correccion\Restaurante\Restaurante.Application\bin\Debug\net5.0\Restaurante.AccessData.dll
+G:\Visual Studio\Tp1-ORM-Acuña_Nicolas-correccion\Tp1_ORM_Correccion\Restaurante\Restaurante.Application\bin\Debug\net5.0\Restaurante.AccessData.pdb

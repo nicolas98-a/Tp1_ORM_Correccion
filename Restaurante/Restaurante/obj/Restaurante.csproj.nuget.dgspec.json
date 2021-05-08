@@ -102,6 +102,9 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
+              "G:\\Visual Studio\\Tp1-ORM-Acuña_Nicolas-correccion\\Tp1_ORM_Correccion\\Restaurante\\Restaurante.AccessData\\Restaurante.AccessData.csproj": {
+                "projectPath": "G:\\Visual Studio\\Tp1-ORM-Acuña_Nicolas-correccion\\Tp1_ORM_Correccion\\Restaurante\\Restaurante.AccessData\\Restaurante.AccessData.csproj"
+              },
               "G:\\Visual Studio\\Tp1-ORM-Acuña_Nicolas-correccion\\Tp1_ORM_Correccion\\Restaurante\\Restaurante.Domain\\Restaurante.Domain.csproj": {
                 "projectPath": "G:\\Visual Studio\\Tp1-ORM-Acuña_Nicolas-correccion\\Tp1_ORM_Correccion\\Restaurante\\Restaurante.Domain\\Restaurante.Domain.csproj"
               }
