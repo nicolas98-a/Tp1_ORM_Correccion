@@ -1,8 +1,6 @@
-﻿using Restaurante.Domain.Commands;
-
-namespace Restaurante.AccessData.Commands
+﻿namespace Restaurante.AccessData.Commands
 {
-    public class GenericsRepository : IGenericsRepository
+    public class GenericsRepository 
     {
         public void Add<T>(T entity) where T : class
         {

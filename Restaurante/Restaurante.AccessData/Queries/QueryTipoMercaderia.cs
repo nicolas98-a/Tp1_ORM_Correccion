@@ -1,14 +1,10 @@
 ﻿using Restaurante.Domain.Entities;
-using Restaurante.Domain.Queries;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Restaurante.AccessData.Queries
 {
-    public class QueryTipoMercaderia : IQueryTipoMercaderia
+    public class QueryTipoMercaderia 
     {
         public List<TipoMercaderia> ListarTipo()
         {

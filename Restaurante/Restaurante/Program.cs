@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Restaurante
+﻿namespace Restaurante
 {
     class Program
     {

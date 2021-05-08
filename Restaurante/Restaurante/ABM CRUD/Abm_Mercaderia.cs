@@ -1,13 +1,8 @@
 ﻿using Restaurante.AccessData.Commands;
 using Restaurante.AccessData.Queries;
-using Restaurante.Domain.Commands;
+using Restaurante.Application.Services;
 using Restaurante.Domain.Entities;
-using Restaurante.Domain.Queries;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Restaurante.ABM_CRUD
 {
@@ -16,6 +11,7 @@ namespace Restaurante.ABM_CRUD
         GenericsRepository _repository;
         QueryTipoMercaderia _queryTipoMercaderia;
         QueryMercaderia _queryMercaderia;
+        private readonly MercaderiaService _mercaderiaService;
 
         static Abm_Mercaderia unicoabmMercaderia = null;
 
@@ -25,7 +21,7 @@ namespace Restaurante.ABM_CRUD
             _repository = new GenericsRepository();
             _queryTipoMercaderia = new QueryTipoMercaderia();
             _queryMercaderia = new QueryMercaderia();
-
+            _mercaderiaService = new MercaderiaService();
         }
 
         public static Abm_Mercaderia getInstance()
@@ -56,29 +52,37 @@ namespace Restaurante.ABM_CRUD
                 Console.WriteLine("Ingrese la imagen de la preparacion: ");
                 string imagen = Console.ReadLine();
 
-                if (nombre != "" && precio.ToString() != "" && ingredientes != "" && preparacion != "" && imagen != "")
+                if (nombre != "" && precio.ToString() != ""  && ingredientes != "" && preparacion != "" && imagen != "")
                 {
-                    int idTipo = SeleccionarTipoMercaderia();
-                    if (idTipo == 0)
+                    if (precio >= 0)
                     {
-                        Console.WriteLine("Mal ingresado, no corresponde a ningun tipo");
+                        int idTipo = _mercaderiaService.SeleccionarTipoMercaderia();
+                        if (idTipo == 0)
+                        {
+                            Console.WriteLine("Mal ingresado, no corresponde a ningun tipo");
+                        }
+                        else
+                        {
+                            var entity = new Mercaderia
+                            {
+                                Nombre = nombre,
+                                Precio = precio,
+                                Ingredientes = ingredientes,
+                                Preparacion = preparacion,
+                                Imagen = imagen,
+                                TipoMercaderiaId = idTipo
+
+                            };
+                            _repository.Add(entity);
+
+                            Console.WriteLine("Mercaderia registrada con exito");
+                        }
                     }
                     else
                     {
-                        var entity = new Mercaderia
-                        {
-                            Nombre = nombre,
-                            Precio = precio,
-                            Ingredientes = ingredientes,
-                            Preparacion = preparacion,
-                            Imagen = imagen,
-                            TipoMercaderiaId = idTipo
-
-                        };
-                        _repository.Add(entity);
-
-                        Console.WriteLine("Mercaderia registrada con exito");
+                        Console.WriteLine("Error, el precio no puede ser negativo");
                     }
+
                 }
                 else
                 {
@@ -109,25 +113,6 @@ namespace Restaurante.ABM_CRUD
                     );
             }
         }
-        public int SeleccionarTipoMercaderia()
-        {
-            Console.WriteLine("Seleccione el tipo de mercaderia: ");
-            List<TipoMercaderia> lista = _queryTipoMercaderia.ListarTipo();
-            foreach (var item in lista)
-            {
-                Console.WriteLine(item.TipoMercaderiaId.ToString() + ")  " + item.Descripcion);
-            }
-            int opc = int.Parse(Console.ReadLine());
 
-            if (opc <= lista.Count)
-            {
-                return opc;
-            }
-            else
-            {
-                return 0;
-            }
-
-        }
     }
 }
