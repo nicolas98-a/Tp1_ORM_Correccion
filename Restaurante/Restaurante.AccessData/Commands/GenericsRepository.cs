@@ -10,5 +10,14 @@
                 _context.SaveChanges();
             }
         }
+        public T Exists<T>(int id) where T : class
+        {
+            using (RestauranteContext _context = new RestauranteContext())
+            {
+                var x = _context.Find<T>(id);
+                return x;
+            }
+              
+        }
     }
 }

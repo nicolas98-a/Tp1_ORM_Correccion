@@ -1,4 +1,5 @@
-﻿using Restaurante.AccessData.Queries;
+﻿using Restaurante.AccessData.Commands;
+using Restaurante.AccessData.Queries;
 using Restaurante.Domain.Entities;
 using System;
 using System.Collections.Generic;
@@ -9,6 +10,7 @@ namespace Restaurante.Application.Services
     public class ComandaMercaderiaService 
     {
         QueryMercaderia _queryMercaderia = new QueryMercaderia();
+        GenericsRepository _genericsRepository = new GenericsRepository();
         public List<Mercaderia> SeleccionarMercaderia()
         {
             List<Mercaderia> mercaderiaSeleccionada = new List<Mercaderia>();
@@ -23,13 +25,14 @@ namespace Restaurante.Application.Services
             int opc = int.Parse(Console.ReadLine());
             while (opc != 0)
             {
-                if (opc <= lista.Count)
+                Mercaderia mercaderia = _genericsRepository.Exists<Mercaderia>(opc);
+                if (mercaderia == null)
                 {
-                    mercaderiaSeleccionada.Add(lista[opc - 1]);
+                    Console.WriteLine("Mal ingresado, no corresponde a una mercaderia");                  
                 }
                 else
                 {
-                    Console.WriteLine("Mal ingresado, no corresponde a una mercaderia");
+                    mercaderiaSeleccionada.Add(lista[opc - 1]);
                 }
                 opc = int.Parse(Console.ReadLine());
             }
