@@ -34,6 +34,7 @@ namespace Restaurante.Application.Services
                 {
                     mercaderiaSeleccionada.Add(lista[opc - 1]);
                 }
+                Console.WriteLine("Seleccione otra mercaderia, o cero para terminar");
                 opc = int.Parse(Console.ReadLine());
             }
 
