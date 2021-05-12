@@ -48,22 +48,28 @@ namespace Restaurante.ABM_CRUD
             }
             else
             {
-                var entity = new Comanda
+                if (listaMercaderias.Count == 0)
                 {
-                    ComandaId = new Guid(),
-                    FormaEntregaId = idFormaEntrega,
-                    PrecioTotal = total,
-                    Fecha = new DateTime()
-                };
-
-                _repository.Add(entity);
-
-                Console.WriteLine("Se registro con exito la comanda");
-                foreach (var item in listaMercaderias)
-                {
-                    Abm_ComandaMercaderia.getInstance().RegistrarComandaMercaderia(item.MercaderiaId, entity.ComandaId);
+                    Console.WriteLine("Error no selecciono ninguna mercaderia");
                 }
+                else
+                {
+                    var entity = new Comanda
+                    {
+                        ComandaId = new Guid(),
+                        FormaEntregaId = idFormaEntrega,
+                        PrecioTotal = total,
+                        Fecha = new DateTime()
+                    };
 
+                    _repository.Add(entity);
+
+                    Console.WriteLine("Se registro con exito la comanda");
+                    foreach (var item in listaMercaderias)
+                    {
+                        Abm_ComandaMercaderia.getInstance().RegistrarComandaMercaderia(item.MercaderiaId, entity.ComandaId);
+                    }
+                }
 
             }
 

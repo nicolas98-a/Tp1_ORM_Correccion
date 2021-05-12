@@ -5,6 +5,7 @@ namespace Restaurante
 {
     public class Menu
     {
+        
         public void InitMenu()
         {
             try
@@ -24,8 +25,6 @@ namespace Restaurante
                             Console.WriteLine("Precione una tecla para volver al menu.....");
                             Console.ReadKey(true);
                             Console.Clear();
-
-                            InitMenu();
                             break;
                         case 2:
                             Titulo();
@@ -33,8 +32,6 @@ namespace Restaurante
                             Console.WriteLine("Precione una tecla para volver al menu.....");
                             Console.ReadKey(true);
                             Console.Clear();
-
-                            InitMenu();
                             break;
                         case 3:
                             Titulo();
@@ -42,8 +39,6 @@ namespace Restaurante
                             Console.WriteLine("Precione una tecla para volver al menu.....");
                             Console.ReadKey(true);
                             Console.Clear();
-
-                            InitMenu();
                             break;
                         case 4:
                             Titulo();
@@ -51,18 +46,14 @@ namespace Restaurante
                             Console.WriteLine("Precione una tecla para volver al menu.....");
                             Console.ReadKey(true);
                             Console.Clear();
-
-                            InitMenu();
                             break;
 
-                        case 5:
-
-                            break;
                         default:
                             Console.WriteLine("Mal ingresado");
                             break;
 
                     }
+                    InitMenu();
                     opcion = int.Parse(Console.ReadLine());
                 }
             }
@@ -94,6 +85,7 @@ namespace Restaurante
                     "4) Listar pedidos \n" +
                     "5) Salir del sistema \n" + "\n"
                 );
-        }
+        }     
+    
     }
 }
